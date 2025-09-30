@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body.catalogo {
+  background: linear-gradient(to bottom, #EAFDE6, #88C425);
+  color: #1B676B;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1B676B;
+  padding: 15px 30px;
+  color: #fff;
+}
+
+header .logo {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #EAFDE6;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #BEF202;
+}
+
+.intro {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.intro h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #519548;
+}
+
+.intro p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #1B676B;
+}
+
+.volver {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #BEF202;
+  color: #1B676B;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #88C425;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1B676B;
+  color: #EAFDE6;
+  margin-top: 20px;
+}

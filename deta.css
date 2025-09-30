@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex; /* Para alinear las tarjetas */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.product-card {
+  width: 300px; /* Ancho de cada tarjeta */
+  height: 400px; /* Altura de cada tarjeta */
+  perspective: 1000px; /* Importante para el efecto 3D de volteo */
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  transition: transform 0.6s; /* Velocidad de la animación de volteo */
+  transform-style: preserve-3d; /* Permite que los elementos hijos tengan efectos 3D */
+}
+
+/* Cuando pasamos el ratón por encima de la tarjeta, el inner se voltea */
+.product-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Oculta la cara trasera cuando está volteada */
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box; /* Incluir padding en el ancho/alto */
+}
+
+.card-front {
+  background-color: #fff;
+  color: #333;
+}
+
+.card-front img {
+  max-width: 100%;
+  max-height: 80%; /* Ajusta la altura de la imagen */
+  object-fit: contain; /* Para que la imagen se ajuste sin distorsionarse */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card-front p {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.card-back {
+  background-color: #333;
+  color: #fff;
+  transform: rotateY(180deg); /* Voltear la cara trasera para que esté lista para mostrarse */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Alinear el texto de los detalles a la izquierda */
+  text-align: left;
+}
+
+.card-back h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #61dafb; /* Un color de acento */
+}
+
+.card-back p {
+  margin-bottom: 8px;
+  font-size: 0.95em;
+}
+
+.card-back strong {
+  color: #a0e6ff;
+}

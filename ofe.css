@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: fantasy;
+  background:linear-gradient(#0C1B33,#000000)
+}
+
+header {
+  background-color: #6E1A38;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: sticky;
+}
+nav{
+    position: sticky;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.carrusel {
+  overflow: hidden;
+  white-space: nowrap;
+  background:linear-gradient(#0C1B33,#000000)
+  padding: 10px ;
+}
+
+.imagenes {
+  display: inline-block;
+  animation: mover 20s linear infinite;
+}
+
+.imagenes img {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+@keyframes mover {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.colecciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 2em;
+}
+
+.tarjeta {
+  background: linear-gradient(#233e97,#D4D4D8);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.03);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 1em;
+  color: #6E1A38;
+  text-align: center;
+}
+
+footer {
+  background-color: #6E1A38;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}

@@ -1,0 +1,151 @@
+body {
+  font-family: fantasy;
+  margin: 0;
+  background:linear-gradient(#0C1B33,#000000);
+}
+
+.navbar {
+  background-color: #6E1A38;
+  padding: 1em;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a.activo,
+.navbar a:hover {
+  color: #c8e6c9;
+}
+
+header {
+  text-align: center;
+  padding: 2em;
+  color: #D4D4D8;
+  background-color: #FAFAFA;
+}
+
+.volver {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.volver a {
+  text-decoration: none;
+  background-color: #2e7d32;
+  color: white;
+  padding: 0.7em 1.4em;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.volver a:hover {
+  background-color: #66bb6a;
+}
+
+.colecciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  padding: 2em;
+  text-decoration: none;
+}
+
+.tarjeta {
+  background: linear-gradient(#233e97,#D4D4D8);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.03);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.tarjeta .info {
+  padding: 1em;
+  text-align: center;
+}
+
+.tarjeta h2 {
+  margin: 0.5em 0 0.3em;
+  color: #6E1A38;
+}
+
+.tarjeta p {
+  color: #5c1212;
+}
+
+footer {
+  text-align: center;
+  background-color: #6E1A38;
+  color: white;
+  padding: 1em;
+  margin-top: 2em;
+}
+a{
+  text-decoration: none;
+}
+
+/* Menú lateral derecha */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    height: 100%;          /* altura completa */
+    width: 0px;           /* ancho del menú */
+    background: linear-gradient(#233e97,#000000);
+    transition: all 1s ease;
+    border: double 5px #0C1B33;
+    overflow: hidden;
+    
+}
+.menu-lateral:hover{
+    height: 100vh;          /* altura completa */
+    width: 200px;           /* ancho del menú */
+
+}
+
+.menu-lateral: ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* centra verticalmente */
+}
+
+.menu-lateral li {
+    width: 100%;
+    list-style: none;
+}
+
+.menu-lateral a {
+    display:block;
+   padding: 20px 35px 40px;
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+    list-style: none;
+}
+
+.menu-lateral a:hover {
+    background: #6E1A38;
+}
