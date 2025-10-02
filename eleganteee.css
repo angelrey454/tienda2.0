@@ -4,21 +4,21 @@ body {
   font-family: fantasy;
   margin: 0;
   padding: 0;
-  background:linear-gradient(#0C1B33,#000000);  
-  color: white;
+  background:white;  
+   color: rgb(49, 45, 49);
 }
 
 header {
-  background-color: #6E1A38;;
+  background-color: #6E1A38;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 30px;
+  padding: 10px 30px;
 }
 
 header .logo {
-  height: 60px;
+  height: 40px;
 }
 
 nav ul {
@@ -44,8 +44,8 @@ nav a.active {
 .intro {
   text-align: center;
   padding: 40px 20px;
-  background: var(--verde-claro);
-  color: rgb(255, 255, 255);
+  background:wheat;
+  color: rgb(49, 45, 49);
 }
 
 .intro h1 {
@@ -67,12 +67,12 @@ nav a.active {
 }
 
 .tarjeta {
-  background-color: #6E1A38;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  border: solid 2px black;
 }
 
 .tarjeta:hover {
@@ -102,7 +102,7 @@ nav a.active {
   text-decoration: none;
   padding: 10px 20px;
   background-color: #222;
-  color: white;
+  color: rgb(49, 45, 49);
   border-radius: 5px;
   transition: 0.3s;
   font-weight: bold;
@@ -116,7 +116,7 @@ footer {
   text-align: center;
   padding: 20px;
   background: var(--verde-oscuro);
-  color: white;
+  color: rgb(49, 45, 49);
 }
 
 /* Menú lateral izquierda */
@@ -126,9 +126,9 @@ footer {
     left: 0;
     height: 100vh;          /* altura completa */
     width: 0px;           /* ancho del menú */
-    background: linear-gradient(#233e97,#000000);
+    background: wheat;
     transition: all 1s ease;
-    border: double 5px #0C1B33;
+    border: double 5px #000000;
     overflow: hidden;
     
 }
@@ -154,7 +154,7 @@ footer {
 .menu-lateral a {
     display: flex;
    padding: 20px 35px 40px;
-    color: #fff;
+    color: #423131;
     text-decoration: none;
     transition: 1s;
     list-style: none;
@@ -162,11 +162,15 @@ footer {
 
 .menu-lateral a:hover {
     background: #6E1A38;
+    color: antiquewhite;
 }
 
 .galeria a{
-  color: #ff6868;
+  color: #03a3ff;
   list-style: none;
   text-decoration: none;
   
+}
+.galeria a:hover{
+  color: #b3ffa9;
 }

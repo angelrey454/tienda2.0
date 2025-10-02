@@ -1,30 +1,23 @@
-:root {
-  --verde-oscuro: #1B676B;
-  --verde-medio: #519548;
-  --verde-claro: #88C425;
-  --amarillo: #BEF202;
-  --blanco: #EAFDE6;
-}
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: var(--blanco);
-  color: var(--verde-oscuro);
+  background: rgb(255, 255, 255);
+  color: rgb(41, 41, 34);
 }
 
 header {
-  background: var(--verde-oscuro);
+  background-color: #6E1A38;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 30px;
+  padding: 10px 30px;
 }
 
 header .logo {
-  height: 60px;
+  height: 40px;
 }
 
 nav ul {
@@ -44,14 +37,14 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  color: var(--amarillo);
+  color: wheat;
 }
 
 .intro {
   text-align: center;
   padding: 40px 20px;
-  background: var(--verde-claro);
-  color: white;
+  background:wheat;
+   color: rgb(41, 41, 34);
 }
 
 .intro h1 {
@@ -77,7 +70,7 @@ nav a.active {
 
 .btn-volver:hover {
   background: var(--verde-medio);
-  color: white;
+  color: rgb(102, 12, 80);
 }
 
 .galeria {
@@ -94,11 +87,12 @@ nav a.active {
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  border: solid 2px black;
 }
 
 .tarjeta:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 12px rgba(121, 75, 75, 0.15);
 }
 
 .tarjeta img {
@@ -118,4 +112,61 @@ footer {
   padding: 20px;
   background: var(--verde-oscuro);
   color: white;
+}
+
+
+/* Menú lateral izquierda */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;          /* altura completa */
+    width: 0px;           /* ancho del menú */
+    background: wheat;
+    transition: all 1s ease;
+    border: double 5px #000000;
+    overflow: hidden;
+    
+}
+.menu-lateral:hover{
+    height: 100vh;          /* altura completa */
+    width: 200px;           /* ancho del menú */
+
+}
+
+.menu-lateral ul {
+    list-style: none;
+    height: 100%;
+   display: block;
+}
+
+.menu-lateral li {
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    display: list-item;
+}
+
+.menu-lateral a {
+    display: flex;
+   padding: 20px 35px 40px;
+    color: #423131;
+    text-decoration: none;
+    transition: 1s;
+    list-style: none;
+}
+
+.menu-lateral a:hover {
+    background: #6E1A38;
+    color: antiquewhite;
+}
+
+.galeria a{
+  color: #03a3ff;
+  list-style: none;
+  text-decoration: none;
+  
+}
+.galeria a:hover{
+  color: #570250;
 }
