@@ -7,16 +7,16 @@ body.catalogo {
 }
 
 header { 
-  background-color: #2e8b57;
+  background-color:#6E1A38;
   color: white;
-  padding: 15px 20px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 header .logo {
-  height: 60px;
+  height: 40px;
 }
 
 nav ul {
@@ -27,7 +27,7 @@ nav ul {
   padding: 0;
 }
 
-nav ul li a {
+nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -35,20 +35,20 @@ nav ul li a {
   transition: background 0.3s;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-  background-color: #3cb371;
-  border-radius: 5px;
+nav a:hover,
+nav a.active {
+  background-color: #f392b4;
+  border-radius: 5px; 
 }
 
 .intro {
   text-align: center;
   padding: 30px 20px;
-  background-color: #e9f5e9;
+  background-color: wheat;
 }
 
 .intro h1 {
-  color: #2e8b57;
+  color: #5c353d;
   font-size: 2em;
   margin-bottom: 10px;
 }
@@ -79,36 +79,64 @@ nav ul li a.active {
   padding: 10px;
   background-color: #f4f9f4;
   font-weight: bold;
-  color: #2e8b57;
+  color: #3f2d2d;
 }
 
 .card:hover {
   transform: scale(1.05);
 }
 
-.volver {
-  text-align: center;
-  margin: 30px 0;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #2e8b57;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background-color: #3cb371;
-}
 
 footer {
-  background-color: #2e8b57;
+  background-color: #6E1A38;
   color: white;
   text-align: center;
   padding: 15px;
   margin-top: 20px;
+}
+
+/* Menú lateral izquierda */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;          /* altura completa */
+    width: 0px;           /* ancho del menú */
+    background: wheat;
+    transition: all 1s ease;
+    border: double 5px #000000;
+    overflow: hidden;
+    
+}
+.menu-lateral:hover{
+    height: 100vh;          /* altura completa */
+    width: 200px;           /* ancho del menú */
+
+}
+
+.menu-lateral ul {
+    list-style: none;
+    height: 100%;
+   display: block;
+}
+
+.menu-lateral li {
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    display: list-item;
+}
+
+.menu-lateral a {
+    display: flex;  
+   padding: 20px 35px 40px;
+    color: #423131;
+    text-decoration: none;
+    transition: 1s;
+    list-style: none;
+}
+
+.menu-lateral a:hover {
+    background: #6E1A38;
+    color: antiquewhite;
 }

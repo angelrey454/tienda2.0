@@ -19,19 +19,20 @@ body {
 }
 
 .navbar a {
-  color: white;
+  color: rgb(255, 247, 247);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
-
-.navbar a.activo,
-.navbar a:hover {
-  color: #c8e6c9;
+.navbar a:hover{
+  color: #ff76e1;
+}
+#col{
+  color: #ff76e1;
 }
 
 header {
- 
+  color: #ff76e1; 
 }
 
 .volver {

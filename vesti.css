@@ -1,31 +1,23 @@
-:root {
-  --verde-oscuro: #1B676B;
-  --verde-medio: #519548;
-  --verde-claro: #88C425;
-  --amarillo: #BEF202;
-  --blanco: #EAFDE6;
-  --rosa-suave: #f9e6ef;
-}
 
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: fantasy;
   margin: 0;
   padding: 0;
-  background: var(--rosa-suave);
-  color: var(--verde-oscuro);
+  background: white;
+  color:#4b3c3c;
 }
 
 header {
-  background: var(--verde-medio);
+  background:#6E1A38;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 30px;
+  padding: 10px 30px;
 }
 
 header .logo {
-  height: 60px;
+  height: 40px;
 }
 
 nav ul {
@@ -45,14 +37,14 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  color: var(--amarillo);
+  color:#b32525;
 }
 
 .intro {
   text-align: center;
   padding: 40px 20px;
-  background: white;
-  color: var(--verde-oscuro);
+  background: wheat;
+  color:#4b3c3c;
   border-bottom: 1px solid #ddd;
 }
 
@@ -65,23 +57,6 @@ nav a.active {
 .intro p {
   font-size: 1.2em;
   color: #444;
-}
-
-.btn-volver {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: var(--verde-claro);
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.btn-volver:hover {
-  background: var(--amarillo);
-  color: var(--verde-oscuro);
 }
 
 .galeria {
@@ -98,6 +73,7 @@ nav a.active {
   overflow: hidden;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  border: solid 2px black;
 }
 
 .tarjeta:hover {
@@ -120,6 +96,67 @@ nav a.active {
 footer {
   text-align: center;
   padding: 20px;
-  background: var(--verde-medio);
+  background: wheat;
+  color: #6E1A38;
+}
+.colecciones {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.colecciones a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #222;
   color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+/* Menú lateral izquierda */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;          /* altura completa */
+    width: 0px;           /* ancho del menú */
+    background: wheat;
+    transition: all 1s ease;
+    border: double 5px #000000;
+    overflow: hidden;
+    
+}
+.menu-lateral:hover{
+    height: 100vh;          /* altura completa */
+    width: 200px;           /* ancho del menú */
+
+}
+
+.menu-lateral ul {
+    list-style: none;
+    height: 100%;
+   display: block;
+}
+
+.menu-lateral li {
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    display: list-item;
+}
+
+.menu-lateral a {
+    display: flex;
+   padding: 20px 35px 40px;
+    color: #423131;
+    text-decoration: none;
+    transition: 1s;
+    list-style: none;
+}
+
+.menu-lateral a:hover {
+    background: #6E1A38;
+    color: antiquewhite;
 }

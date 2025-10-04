@@ -1,12 +1,12 @@
 body {
   margin: 0;
   font-family: fantasy;
-  background:linear-gradient(#0C1B33,#000000)
+  background:rgb(255, 255, 255);
 }
 
 header {
-  background-color: #6E1A38;
-  color: white;
+  background-color:#6E1A38;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 1em;
   position: sticky;
@@ -15,29 +15,36 @@ nav{
     position: sticky;
 }
 nav a {
-  color: white;
+  color: rgb(255, 232, 232);
   text-decoration: none;
   margin: 0 15px;
 }
+nav a:hover{
+  color: #ff76e1;
+}
+.oferr{
+  color: #ff76e1;
+}
 
 .carrusel {
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  background:linear-gradient(#0C1B33,#000000)
-  padding: 10px ;
+  box-sizing: border-box;
 }
 
 .imagenes {
-  display: inline-block;
-  animation: mover 20s linear infinite;
+  display: inline-flex;
+  animation: mover 15s linear infinite;
 }
 
 .imagenes img {
-  width: 200px;
+  width: auto;
   height: 200px;
   margin-right: 10px;
   object-fit: cover;
   border-radius: 15px;
+  flex-shrink: 0;
 }
 
 @keyframes mover {
@@ -53,11 +60,11 @@ nav a {
 }
 
 .tarjeta {
-  background: linear-gradient(#233e97,#D4D4D8);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
+  border: 2px solid black;
 }
 
 .tarjeta:hover {
@@ -66,13 +73,13 @@ nav a {
 
 .tarjeta img {
   width: 100%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
 }
 
 .info {
   padding: 1em;
-  color: #6E1A38;
+  color: #251c20;
   text-align: center;
 }
 
@@ -81,4 +88,50 @@ footer {
   color: white;
   text-align: center;
   padding: 1em;
+}
+
+/* Menú lateral izquierda */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;          /* altura completa */
+    width: 0px;           /* ancho del menú */
+    background: wheat;
+    transition: all 1s ease;
+    border: double 5px #000000;
+    overflow: hidden;
+    
+}
+.menu-lateral:hover{
+    height: 100vh;          /* altura completa */
+    width: 200px;           /* ancho del menú */
+
+}
+
+.menu-lateral ul {
+    list-style: none;
+    height: 100%;
+   display: block;
+}
+
+.menu-lateral li {
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    display: list-item;
+}
+
+.menu-lateral a {
+    display: flex;
+   padding: 20px 35px 40px;
+    color: #423131;
+    text-decoration: none;
+    transition: 1s;
+    list-style: none;
+}
+
+.menu-lateral a:hover {
+    background: #6E1A38;
+    color: antiquewhite;
 }

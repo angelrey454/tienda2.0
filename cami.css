@@ -1,6 +1,6 @@
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: fantasy;
   margin: 0;
   padding: 0;
   background: rgb(255, 255, 255);
@@ -37,7 +37,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  color: wheat;
+  color: #e47b7b;
 }
 
 .intro {
@@ -54,23 +54,6 @@ nav a.active {
 
 .intro p {
   font-size: 1.2em;
-}
-
-.btn-volver {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: var(--amarillo);
-  color: var(--verde-oscuro);
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.btn-volver:hover {
-  background: var(--verde-medio);
-  color: rgb(102, 12, 80);
 }
 
 .galeria {
@@ -112,6 +95,21 @@ footer {
   padding: 20px;
   background: var(--verde-oscuro);
   color: white;
+}
+
+.colecciones {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.colecciones a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #222;
+  color: rgb(75, 55, 55);
+  border-radius: 5px;
+  transition: 0.3s;
+  font-weight: bold;
 }
 
 

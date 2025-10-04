@@ -1,30 +1,23 @@
-:root {
-  --verde-oscuro: #1B676B;
-  --verde-medio: #519548;
-  --verde-claro: #88C425;
-  --amarillo: #BEF202;
-  --blanco: #EAFDE6;
-}
 
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: var(--blanco);
-  color: var(--verde-oscuro);
+  background: white;
+  color: #2b2424;
 }
 
 header {
-  background: var(--verde-oscuro);
+  background: #6E1A38;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 30px;
+  padding: 10px 30px;
 }
 
 header .logo {
-  height: 60px;
+  height: 40px;
 }
 
 nav ul {
@@ -44,14 +37,14 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  color: var(--amarillo);
+  color:#d43a3a;
 }
 
 .intro {
   text-align: center;
   padding: 40px 20px;
-  background: var(--verde-medio);
-  color: white;
+  background: wheat;
+  color: rgb(77, 59, 59);
 }
 
 .intro h1 {
@@ -78,6 +71,7 @@ nav a.active {
   padding: 15px;
   text-align: center;
   transition: transform 0.3s;
+  border: 2px solid black;
 }
 
 .card:hover {
@@ -87,6 +81,7 @@ nav a.active {
 .card img {
   max-width: 100%;
   border-radius: 8px;
+  height: 200px;
 }
 
 .card p {
@@ -119,6 +114,58 @@ nav a.active {
 footer {
   text-align: center;
   padding: 20px;
-  background: var(--verde-oscuro);
-  color: white;
+  background: wheat;
+  color: rgb(58, 54, 45);
+}
+
+/* Menú lateral izquierda */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;          /* altura completa */
+    width: 0px;           /* ancho del menú */
+    background: wheat;
+    transition: all 1s ease;
+    border: double 5px #000000;
+    overflow: hidden;
+    
+}
+.menu-lateral:hover{
+    height: 100vh;          /* altura completa */
+    width: 200px;           /* ancho del menú */
+
+}
+
+.menu-lateral ul {
+    list-style: none;
+    height: 100%;
+   display: block;
+}
+
+.menu-lateral li {
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+    display: list-item;
+}
+
+.menu-lateral a {
+    display: flex;
+   padding: 20px 35px 40px;
+    color: #423131;
+    text-decoration: none;
+    transition: 1s;
+    list-style: none;
+}
+
+.menu-lateral a:hover {
+    background: #6E1A38;
+    color: antiquewhite;
+}
+.ves{
+  text-align: center;
+  font-family: Lucida ;
+  background: linear-gradient(#6E1A38,#423131);
+  color: beige;
 }

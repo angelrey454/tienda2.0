@@ -13,11 +13,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 30px;
+  padding: 10px 30px;
 }
 
 header .logo {
-  height: 60px;
+  height: 40px;
 }
 
 nav ul {
@@ -37,7 +37,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  color: var(--amarillo);
+  color:#ff5454;
 }
 
 .intro {
@@ -115,6 +115,24 @@ nav a.active {
 footer {
   text-align: center;
   padding: 20px;
-  background: var(--verde-oscuro);
-  color: white;
+  background:#6E1A38;
+  color: rgb(255, 247, 247);
+}
+.novedadhallo{
+    background:linear-gradient(#26137a,#221b0d);
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgb(90, 90, 90);
+  padding: 25px;
+  margin-bottom: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid wheat;
+  color: aliceblue;
+
+}
+.novedadhallo h2{
+  color: rgb(255, 136, 0);
+  -webkit-text-stroke:1px wheat;
+}
+.novedadhallo a{
+  color: #ffae01;
 }
