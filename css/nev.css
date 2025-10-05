@@ -104,13 +104,11 @@ nav a.active {
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+    transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-.novedad .btn:hover {
-  background: var(--amarillo);
-  color: var(--verde-oscuro);
-}
 
 footer {
   text-align: center;
@@ -127,7 +125,13 @@ footer {
   transition: transform 0.3s, box-shadow 0.3s;
   border: 1px solid wheat;
   color: aliceblue;
+   font-weight: bold;
+  transition: background 0.3s;
 
+}
+.novedadhallo:hover{
+      transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 .novedadhallo h2{
   color: rgb(255, 136, 0);
